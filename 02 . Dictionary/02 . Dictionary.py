@@ -11,3 +11,11 @@
 
 
 """Creating a dictionary"""
+
+"""There are two ways to create a dictionary"""
+"""
+1. Using the dict() function
+2. Using the dict constructor
+"""
+"""Example 1: Using the dict() function"""
+
