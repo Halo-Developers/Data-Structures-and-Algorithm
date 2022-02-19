@@ -24,3 +24,12 @@ print(f"The memory size of the list is {sys.getsizeof(list1)} bytes")
 #Testing for the time taken to create the list and tuple
 print(f"The time taken to create the tuple is {timeit.timeit('(1,2,3,4,5,6,7,8,9,10)', number=1000000)} seconds")
 print(f"The time taken to create the List is {timeit.timeit('[1,2,3,4,5,6,7,8,9,10]', number=1000000)} seconds")
+
+
+# escape sequence \
+
+print("Rogers is a goodman \"he's\" likes coding")
+
+'Rogers is a goodman "he\'s" likes coding'
+
+# 'Rogers is a goodman he"s likes coding'
