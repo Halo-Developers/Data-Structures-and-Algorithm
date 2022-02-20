@@ -1,9 +1,25 @@
 #List comprehension
 
+"""
+The concept of list comprehension takes in three parameters
+  - expression
+  - iteration
+  - codition (This usually optional)
+  
+  syntax of list comprehension
+  list_of_numbers_from_1_to_10 = [expression iteration condition]
+"""
+#example of list comprehension with without condition
+list_of_numbers_from_1_to_10 = [number for number in range(11)]
+
+#example of list comprehension with without condition
+
 list1 = [x/2 for x in range(110)]
 print(list1)
 
 
+
+#example of list comprehension with with condition
 names = ["Rogers", "Edgar", "Joan", "Bam", "Hellen", "Angei"]
 
 list_of_names_with_letter_o = [name for name in names if 'o' in name]
