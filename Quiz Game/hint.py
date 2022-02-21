@@ -7,22 +7,26 @@ Stpes:
     3. 
 """
 
-question_and_answer = {
-    "What is the capital of India?": "New Delhi",
-    "What is the capital of USA?": "Washington",
-    "What is the capital of UK?": "London",
-    "What is the capital of Germany?": "Berlin",
-    "What is the capital of France?": "Paris",
-    "What is the capital of Italy?": "Rome",
-    "What is the capital of Australia?": "Canberra",
-    "What is the capital of Canada?": "Ottawa",
-    "What is the capital of New Zealand?": "Wellington",
-    "What is the capital of South Africa?": "Pretoria",
-    "What is the capital of the Netherlands?": "Amsterdam",
-    "What is the capital of the United Kingdom?": "London",
-    "What is the capital of the United States?": "Washington",
-    "What is the capital of the United Arab Emirates?": "Abu Dhabi",
-    "What is the capital of the United Kingdom?": "London",
-    "What is the capital of the United States?": "Washington",
+quiz = {
+    1 : {
+        "question" : "What is the highest mountain in Uganda",
+        "answer" : "Rwenzori"
+    },
+    2 :{
+        "question" : "Who owned the iron hammar in the Avengers",
+        "answer" : "Thor"
+    },
+    3 :{
+        "question" : "Who had a shield in Avengers movie",
+        "answer" : "Captain America"
+    }
 }
 
+for question in quiz:
+    print(quiz[question]["question"])
+    guess = input("Enter your guess: ")
+
+    if guess == quiz[question]["answer"]:
+        print("Correct")
+    else:
+        print("Wrong")
